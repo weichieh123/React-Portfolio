@@ -1,0 +1,28 @@
+.App {
+    height: 100vh;
+    .section {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgb(240, 166, 153);
+        /* 
+            讓section定位在Nav下方 
+            scroll-snap-type, scroll-snap-align 可以偵測區塊邊界
+
+        */
+        position: relative;
+        top: 70px;
+        scroll-snap-type:  y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        > * {
+            /* section裡面的所有元件 */
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
