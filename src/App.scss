@@ -12,7 +12,7 @@
         position: relative;
         top: 70px;
         scroll-behavior: smooth;
-        scroll-snap-type:  y mandatory;
+        // scroll-snap-type:  y mandatory;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar {
             display: none;
@@ -22,8 +22,8 @@
         > * {
             /* section裡面的所有元件 */
             width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
+            min-height: calc(100vh - 70px);
+            // scroll-snap-align: start;
         }
     }
 }

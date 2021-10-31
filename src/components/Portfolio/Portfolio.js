@@ -9,7 +9,7 @@ export default function Portfolio() {
   const list = [
     {
       id: 'Layout',
-      title: '切版練習',
+      title: 'Layout',
     },
     {
       id: 'React',

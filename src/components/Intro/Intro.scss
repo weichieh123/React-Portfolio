@@ -1,6 +1,9 @@
 @import '../../global.scss';
 
 .intro {
+    // 剛好滿版
+    height: calc(100vh - 70px);
+
     background-color: white;
     display: flex;
     @include mobile {
