@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .intro {
     background-color: white;
     display: flex;
@@ -39,7 +41,7 @@
                 font-size: 30px;
                 span {
                     font-size: inherit;
-                    color: lightskyblue;
+                    color: $mainColor;
                 }
                 .ityped-cursor {
                     animation: blink 1s infinite;
