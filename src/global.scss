@@ -1,2 +1,9 @@
 $mainColor: rgb(79, 133, 165);
 $warnColor: tomato;
+
+$width: 768px;
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
