@@ -8,7 +8,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 99;
+    }
     .arrow {
         position: absolute;
         height: 50px;
@@ -32,10 +37,13 @@
         left: 0;
         transition: all 1s ease-out;
         @include mobile {
-            height: 100vh;
+            // height: 100vh;
+            position: relative;
+            height: fit-content;
             flex-direction: column;
             justify-content: center;
         }
+        
         .container {
             width: 100vw;
             display: flex;
@@ -51,8 +59,8 @@
                 justify-content: center;
                 @include mobile {
                     width: 90%;
-                    height: 200px;
-                    margin: 5px 0;
+                    height: 300px;
+                    margin: 10px 0;
                 }
                 .left {
                     flex: 4;
