@@ -2,6 +2,7 @@ import './Works.scss'
 import { useState } from 'react'
 import { works } from '../../data'
 import WorksSlide from './WorksSlide'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,15 +15,15 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <h1>Works</h1>
-      <div
+      <ScrollContainer
         className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        // style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {works.map((work) => (
           <WorksSlide work={work} />
         ))}
-      </div>
-      <img
+      </ScrollContainer>
+      {/* <img
         src="assets/arrow.svg"
         className="arrow left"
         alt=""
@@ -33,7 +34,7 @@ export default function Works() {
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
-      />
+      /> */}
     </div>
   )
 }

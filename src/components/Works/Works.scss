@@ -34,8 +34,11 @@
         height: 350px;
         display: flex;
         position: absolute;
-        left: 0;
+        left: 5vw;
+        // left: 0;
         transition: all 1s ease-out;
+        overflow-x: scroll;
+        // flex-wrap: nowrap;
         @include mobile {
             // height: 100vh;
             position: relative;
@@ -45,12 +48,11 @@
         }
         
         .container {
-            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0 20px;
             @include mobile {
-            //    height: 120vw;         
             }
             .item {
                 width: 700px;
