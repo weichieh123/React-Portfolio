@@ -23,7 +23,7 @@ export const portfolioReact = [
   {
     id: 1,
     title: '資策會專題 - Lunar Phase',
-    img: 'assets/Portfolio/React-LunarPhase.PNG',
+    img: 'assets/Portfolio/ReactLunarPhase.PNG',
     link: 'https://github.com/weichieh123/Lunar_Phase_React',
   },
   {
