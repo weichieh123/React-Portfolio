@@ -23,7 +23,7 @@ export const portfolioReact = [
   {
     id: 1,
     title: '資策會專題 - Lunar Phase',
-    img: 'assets/Portfolio/ReactLunarPhase.png',
+    img: 'assets/Portfolio/React-LunarPhase.png',
     link: 'https://github.com/weichieh123/Lunar_Phase_React',
   },
   {
@@ -94,9 +94,9 @@ export const works = [
   },
   {
     id: 4,
-    title: 'Lunar Phase電商網站',
-    info: '資策會期末專題，以React架構實作電商網站，負責購物車頁面、歷史訂單與收藏頁。',
-    tags: 'Desktop',
+    title: 'Lunar Phase Website',
+    info: '資策會期末專題，以React+Node實作電商網站，負責購物車頁面、歷史訂單與收藏頁，以及小組整合。',
+    tags: 'React',
     iconDesktop: true,
     iconMobile: false,
     img: 'assets/Works/LunarPhase(index).png',
@@ -104,12 +104,12 @@ export const works = [
   },
   {
     id: 5,
-    title: 'Lunar Phase電商網站',
-    info: '資策會期末專題，以React架構實作電商網站，負責購物車頁面、歷史訂單與收藏頁，以及小組前後端整合。',
-    tags: 'React Node',
+    title: 'JSMART Website',
+    info: '資策會期中專題，以Php+MySql實作電商網站，負責購物車頁面、歷史訂單與後台管理頁，以及小組整合。',
+    tags: 'Php',
     iconDesktop: true,
     iconMobile: false,
-    img: 'assets/Works/LunarPhase(index).png',
-    link: 'https://github.com/weichieh123/Lunar_Phase_React',
+    img: 'assets/Works/Php-Website(admin).png',
+    link: 'https://github.com/weichieh123/jsmart-teamwork',
   },
 ]

@@ -49,6 +49,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @include mobile {
+            //    height: 120vw;         
+            }
             .item {
                 width: 700px;
                 height: 100%;
@@ -59,8 +62,9 @@
                 justify-content: center;
                 @include mobile {
                     width: 90%;
-                    height: 300px;
+                    // height: 120vw;
                     margin: 10px 0;
+                    flex-direction: column;
                 }
                 .left {
                     flex: 4;
@@ -68,12 +72,23 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @include mobile {
+                        // flex: 5;
+                        flex: none;
+                        width: 90%;
+                        order: 2;
+                        margin: 10px 0;
+                    }
+
                     .leftContainer {
                         width: 90%;
                         height: 70%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        @include mobile {
+                            justify-content: start; 
+                        }
                         .iconRow {
                             display: flex;
                             .imgContainer {
@@ -85,24 +100,43 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                @include mobile {
+                                    width: 20px;
+                                    height: 20px;
+                                }
                                 img {
                                     width: 25px;
                                     height: 23px;
+                                    @include mobile {
+                                        width: 13px;
+                                        height: 11px;
+                                    }
                                 }
                             }
                         }
                         h2 {
-                            font-size: 20px;
+                            font-size: 26px;
                             color: $works-text;
+                            @include mobile {
+                                font-size: 16px;
+                                margin-top: 8px;
+                            }
                         }
                         p {
                             font-size: 13px;
+                            @include mobile {
+                                font-size: 12px;
+                                margin-top: 5px;
+                            }
                         }
                         span {
                             font-size: 12px;
                             font-weight: 600;
                             text-decoration: underline;
                             cursor: pointer;
+                            @include mobile {
+                                margin-top: 5px;
+                            }
                         }
                     }
                 }
@@ -116,11 +150,21 @@
                     position: relative;
                     // border: 1px solid #ccc;
                     // box-sizing: border-box;
+                    @include mobile {
+                        // flex: 6;
+                        flex: none;
+                        width: 100%;
+                        order: 1;
+                        height: 60vw;
+                    }
                     img {
                         width: 440px;
                         // transform: rotate(-10deg);
                         position: absolute;
                         top: 0;
+                        @include mobile {
+                            width: 100%;
+                        }
                     }
                 }
             }
