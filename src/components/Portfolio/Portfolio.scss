@@ -64,9 +64,9 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
-                opacity: 0.2;
+                opacity: 0.3;
                 z-index: 0;
-
+                // animation: blink 3s infinite;
             }
             &:hover {
                 background-color: transparent;
@@ -75,6 +75,15 @@
                     z-index: 1;
                 }
             }
+            // @keyframes blink {
+            //     50% {
+            //         opacity: 1;
+            //     }
+            //     100% {
+            //         opacity: 0.2;
+            //     }
+                
+            // }
         }
     }
 }
