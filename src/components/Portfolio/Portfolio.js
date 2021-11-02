@@ -53,7 +53,7 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <a href={d.link} className="item">
+          <a href={d.link} className="item" key={d.id}>
             <img src={process.env.PUBLIC_URL + d.img} alt="" />
             <h3>{d.title}</h3>
           </a>
