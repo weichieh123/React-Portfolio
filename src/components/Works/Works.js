@@ -13,7 +13,7 @@ export default function Works() {
   //     : setCurrentSlide(currentSlide < works.length - 1 ? currentSlide + 1 : 0)
   // }
   return (
-    <ScrollContainer className="works" id="works">
+    <div className="works" id="works">
       <h1>Works</h1>
       <div
         className="slider"
@@ -35,6 +35,6 @@ export default function Works() {
         alt=""
         onClick={() => handleClick()}
       /> */}
-    </ScrollContainer>
+    </div>
   )
 }
