@@ -1,8 +1,10 @@
+@import './global.scss';
+
 .App {
     height: 100vh;
     .section {
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - $nav-index-height);
         background-color: rgb(240, 166, 153);
         /* 
             讓section定位在Nav下方 
@@ -10,20 +12,25 @@
 
         */
         position: relative;
-        top: 70px;
+        top: $nav-index-height;
         scroll-behavior: smooth;
         // scroll-snap-type:  y mandatory;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar {
             display: none;
         }
-
+        @include mobile {
+            height: calc(100vh - $nav-mobile-height);
+        }
 
         > * {
             /* section裡面的所有元件 */
             width: 100vw;
-            min-height: calc(100vh - 70px);
+            min-height: calc(100vh - $nav-index-height);
             // scroll-snap-align: start;
+            @include mobile {
+                min-height: calc(100vh - $nav-mobile-height);
+            }
         }
     }
 }

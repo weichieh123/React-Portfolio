@@ -2,11 +2,12 @@
 
 .intro {
     // 剛好滿版
-    height: calc(100vh - 70px);
+    height: calc(100vh - $nav-index-height);
 
     background-color: white;
     display: flex;
     @include mobile {
+        height: calc(100vh - $nav-mobile-height);
         flex-direction: column;
         align-items: center;
     }
@@ -14,8 +15,8 @@
         flex: 1;
         overflow: hidden;
         .imgContainer {
-            width: calc(90vh - 70px);
-            height: calc(90vh - 70px);
+            width: calc(90vh - $nav-index-height);
+            height: calc(90vh - $nav-index-height);
             border-radius: 50%;
             // margin-top: 8vh;
             float: right;
@@ -24,8 +25,8 @@
             justify-content: center;
             @include mobile {
                 margin-top: 0;
-                width: calc(50vh - 35px);
-                height: calc(50vh - 35px);
+                width: calc(50vh - $nav-mobile-height/2);
+                height: calc(50vh - $nav-mobile-height/2);
                 align-items: flex-start;
             }
             img {
@@ -93,6 +94,9 @@
             position: absolute;
             bottom: 30px;
             left: 50%;
+            @include mobile {
+                left: 45%;
+            }
             img {
                 width: 30px;
                 animation: arrowBlink 1.5s infinite;
