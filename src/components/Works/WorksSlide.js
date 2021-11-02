@@ -7,12 +7,12 @@ export default function WorksSlide({ work }) {
             <div className="iconRow">
               {work.iconDesktop && (
                 <div className="imgContainer">
-                  <img src="assets/desktop.svg" alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/desktop.svg"} alt="" />
                 </div>
               )}
               {work.iconMobile && (
                 <div className="imgContainer">
-                  <img src="assets/mobile.svg" alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/mobile.svg"} alt="" />
                 </div>
               )}
             </div>
@@ -22,7 +22,7 @@ export default function WorksSlide({ work }) {
           </div>
         </div>
         <div className="right">
-          <img src={work.img} alt="" />
+          <img src={process.env.PUBLIC_URL + work.img} alt="" />
         </div>
       </div>
     </div>
