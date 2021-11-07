@@ -29,8 +29,8 @@ export const portfolioReact = [
   {
     id: 2,
     title: 'Todo App',
-    img: '/assets/Portfolio/React-TodoApp.png',
-    link: 'https://github.com/weichieh123/React-TodoApp',
+    img: '/assets/Portfolio/React-TodoAppMui.jpg',
+    link: 'https://weichieh123.github.io/React-TodoApp-MUI/',
   },
   {
     id: 3,
