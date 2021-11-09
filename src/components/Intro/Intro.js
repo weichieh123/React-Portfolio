@@ -16,6 +16,11 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="left">
+        <div className="introContainer">
+          <a href="https://github.com/weichieh123?tab=repositories">
+           <img src={process.env.PUBLIC_URL + "/assets/github.svg"} alt="" />
+          </a>
+        </div>
         <div className="imgContainer">
           <img src={process.env.PUBLIC_URL + "/assets/photo.jpg"} alt="" />
         </div>
@@ -23,7 +28,7 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Hi! I'm</h2>
-          <h1>Huang WeiChieh</h1>
+          <h1>Huang Wei Chieh</h1>
           <h3>a <span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">

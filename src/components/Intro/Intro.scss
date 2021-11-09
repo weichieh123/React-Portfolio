@@ -14,11 +14,12 @@
     .left {
         flex: 1;
         overflow: hidden;
+        position: relative;
         .imgContainer {
             width: calc(90vh - $nav-index-height);
             height: calc(90vh - $nav-index-height);
             border-radius: 50%;
-            // margin-top: 8vh;
+            margin-top: 0;
             float: right;
             display: flex;
             align-items: center;
@@ -36,6 +37,25 @@
                 @include mobile {
                     height: 100%;
                 }
+            }
+        }
+        .introContainer {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            background-color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 5vw;
+            right: 5vw;
+            @include mobile {
+                width: 40px;
+                height: 40px;
+            }
+            img {
+                width: 100%
             }
         }
     }
