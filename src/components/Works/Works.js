@@ -13,8 +13,8 @@ export default function Works() {
   //     : setCurrentSlide(currentSlide < works.length - 1 ? currentSlide + 1 : 0)
   // }
   return (
-    <ScrollContainer className="works" id="works">
-      <h1>Works</h1>
+    <ScrollContainer className="works">
+      <h1 id="works">Works</h1>
       <div
         className="slider"
         // style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

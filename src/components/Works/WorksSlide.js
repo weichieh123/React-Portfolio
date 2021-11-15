@@ -16,7 +16,7 @@ export default function WorksSlide({ work }) {
                 </div>
               )}
             </div>
-            <h2>{work.title}</h2>
+            <h2><a href={work.link}>{work.title}</a></h2>
             <p>{work.info}</p>
             <span>{work.tags}</span>
           </div>
