@@ -57,7 +57,7 @@ export const portfolioVue = [
     id: 1,
     title: 'Todo App',
     img: '/assets/Portfolio/Vue-TodoApp.png',
-    link: 'https://github.com/weichieh123/Vue-TodoApp',
+    link: 'https://weichieh123.github.io/Vue-TodoApp/',
   },
 ]
 
