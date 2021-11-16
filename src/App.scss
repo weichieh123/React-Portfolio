@@ -21,6 +21,7 @@
         }
         @include mobile {
             height: calc(100vh - $nav-mobile-height);
+            top: $nav-mobile-height;
         }
 
         > * {

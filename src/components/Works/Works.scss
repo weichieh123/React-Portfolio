@@ -9,9 +9,11 @@
     justify-content: center;
     position: relative;
     h1 {
+        font-size: 50px;
+        color: #fff;
         position: absolute;
-        top: 0;
-        left: 10px;
+        top: 3vh;
+        left: 5vw;
         z-index: 99;
     }
     .arrow {
@@ -38,11 +40,12 @@
         transition: all 1s ease-out;
         @include mobile {
             left: 0;
+            top: 80px;
             position: relative;
             height: fit-content;
             flex-direction: column;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-bottom: 120px;
         }
         
         .container {
