@@ -104,6 +104,16 @@ export const works = [
   },
   {
     id: 5,
+    title: 'E-Commerce Website',
+    info: '使用Material、commerce.js與stripe應用在React框架之中，實現電商網站之架構。',
+    tags: 'React',
+    iconDesktop: true,
+    iconMobile: true,
+    img: '/assets/Works/React-ECommerce.jpg',
+    link: 'https://wei-react-ecommerce.netlify.app/',
+  },
+  {
+    id: 6,
     title: 'JSMART Website',
     info: '資策會期中專題，以Php+MySql實作電商網站，負責購物車頁面、歷史訂單與後台管理頁，以及小組整合。',
     tags: 'Php',
