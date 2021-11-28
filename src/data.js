@@ -115,7 +115,7 @@ export const works = [
     tags: 'React',
     iconDesktop: true,
     iconMobile: true,
-    img: '/assets/Works/React-ECommerce.jpg',
+    img: '/assets/Works/React-ECommerce(index).png',
     link: 'https://wei-react-ecommerce.netlify.app/',
   },
   {
