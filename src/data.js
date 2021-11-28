@@ -50,6 +50,12 @@ export const portfolioReact = [
     img: '/assets/Portfolio/React-ReduxToolkit.png',
     link: 'https://github.com/weichieh123/learn-redux-toolkit',
   },
+  {
+    id: 6,
+    title: 'Food Order App',
+    img: '/assets/Portfolio/React-FoodOrderApp.jpg',
+    link: 'https://weichieh123.github.io/FoodOrderApp/',
+  },
 ]
 
 export const portfolioVue = [
@@ -114,6 +120,16 @@ export const works = [
   },
   {
     id: 6,
+    title: 'Food Order App',
+    info: '使用React框架搭配useContext、useReducer與forwardRef等Hooks，實現訂購餐點網站。',
+    tags: 'React',
+    iconDesktop: true,
+    iconMobile: false,
+    img: '/assets/Works/React-FoodOrderApp(index).png',
+    link: 'https://weichieh123.github.io/FoodOrderApp/',
+  },
+  {
+    id: 7,
     title: 'JSMART Website',
     info: '資策會期中專題，以Php+MySql實作電商網站，負責購物車頁面、歷史訂單與後台管理頁，以及小組整合。',
     tags: 'Php',
